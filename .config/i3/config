@@ -213,5 +213,6 @@ bindsym $mod+F11 bar mode toggle
 # hide window decorations (temporarly)
 for_window [class="Firefox"] border none
 for_window [class="mpv"] border none
+for_window [class="mpv"] sticky enable
 hide_edge_borders both
 default_border none
