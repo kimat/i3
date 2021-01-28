@@ -226,3 +226,8 @@ for_window [class="mpv"] sticky enable
 workspace_layout tabbed
 # }}}
 
+# autostart apps {{{
+exec i3-sensible-terminal -e "tmux new-session -A -s main" -t ""
+exec firefox
+exec --no-startup-id $HOME/.local/bin/a
+# }}}
