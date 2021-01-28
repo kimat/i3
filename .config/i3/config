@@ -210,9 +210,15 @@ bar {
 bindsym $mod+F11 bar mode toggle
 # }}}
 
-# hide window decorations (temporarly)
+# hide window decorations {{{
+default_border normal
+hide_edge_borders both
 for_window [class="Firefox"] border none
 for_window [class="mpv"] border none
+for_window [class="termite"] border none
+# }}}
+
+# make windows appear above all {{{
 for_window [class="mpv"] sticky enable
-hide_edge_borders both
-default_border none
+# }}}
+
