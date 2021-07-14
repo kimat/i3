@@ -221,7 +221,9 @@ for_window [class="termite"] border none
 # }}}
 
 # make windows appear above all {{{
-for_window [class="mpv"] sticky enable
+for_window [class="mpv"] floating enable
+for_window [instance="floating"] floating enable
+for_window [class="floating"] floating enable
 # }}}
 
 # default layout{{{
